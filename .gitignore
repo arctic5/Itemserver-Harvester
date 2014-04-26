@@ -1,0 +1,7 @@
+*.pyc
+*.gml
+# debug files
+timer.py
+readstring.py
+# my data file
+data.py
