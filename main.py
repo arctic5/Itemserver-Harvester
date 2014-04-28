@@ -46,7 +46,7 @@ print "Arctic's Lightweight Itemserver Miner Alpha v0.01"
 #print "My Loadout:",myLoadout
 print "Server Start Response",serverStartResponse
 print "Length of server key:",len(serverKey)
-print "Length of server key:",len(currentGiftKey)
+print "Length of first gift key:",len(currentGiftKey)
 print "Server key:",serverKey
 print "Initial gift key:",currentGiftKey
 print "My Token:", myToken
@@ -58,11 +58,13 @@ while x == 1:
     if (time.time()*1000 > giftDelay):
         attemptGift()
         giftDelay = (time.time()*1000)+1000*60*15
+        x = 0
 
+#this does not work is not needed yet
 #Refresh Token
-if (startTime + 1000*60*60*2 < time.time()*1000):
-    startTime = time.time()*1000
-    myToken = http_new_get("http://l3.ajf.me/gg2/refreshToken.php?user_name="+myName+"&user_key="+serverKey+"&token="+myToken)
-    print "Token refreshed"
-    print "New Token:",myToken
+# if (startTime + 1000*60*60*2 < time.time()*1000):
+    # startTime = time.time()*1000
+    # myToken = http_new_get("http://l3.ajf.me/gg2/refreshToken.php?user_name="+myName+"&user_key="+serverKey+"&token="+myToken)
+    # print "Token refreshed"
+    # print "New Token:",myToken
 raw_input()
