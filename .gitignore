@@ -3,5 +3,6 @@
 # debug files
 timer.py
 readstring.py
+/ignorethisfolder
 # my data file
 data.py
