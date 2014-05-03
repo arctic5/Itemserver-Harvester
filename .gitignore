@@ -3,6 +3,9 @@
 # debug files
 timer.py
 readstring.py
-/ignorethisfolder
+/ignorethisfolder/
 # my data file
 data.py
+/dist/
+/build/
+setup.py
